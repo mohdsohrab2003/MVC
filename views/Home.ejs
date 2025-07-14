@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind in Express</title>
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 text-center p-8">
+    <nav class="bg-white shadow p-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="/images/logo.png" alt="Logo" class="h-8 w-8 mr-2" />
+        <span class="text-xl font-bold text-gray-700">MyApp</span>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="flex-1 mx-4">
+        <form action="/search" method="GET" class="flex">
+          <input
+            type="text"
+            name="q"
+            placeholder="Search..."
+            class="w-full border border-gray-300 rounded-l px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-4 py-1 rounded-r hover:bg-blue-600"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+  </body>
+</html>
